@@ -1,0 +1,43 @@
+{
+  "name": "menyoo-blog",
+  "author": "Vinicius Cainelli <vinicius@menyoo.mer>",
+  "license": "MIT",
+  "version": "0.1.0",
+  "main": "gulpfile.js",
+  "paths": {
+    "src": {
+      "css": "./src/css/",
+      "views": "./src/views/"
+    },
+    "dist": {
+      "base": "./dist/",
+      "css": "./dist/css/"
+    },
+    "config": {
+      "tailwind": "./tailwind.js"
+    }
+  },
+  "description": "MenuQR Static Blog",
+  "repository": {
+    "url": "https://github.com/menyoo/blog.git",
+    "type": "git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-watch": "^4.3.11",
+    "husky": "^0.14.1",
+    "autoprefixer": "^8.4.1",
+    "browser-sync": "^2.18.13",
+    "gulp-postcss": "^7.0.0",
+    "tailwindcss": "^0.6.4"
+  },
+  "dependencies": {
+    "gulp-clean-css": "^3.9.4",
+    "gulp-purgecss": "^0.15.0"
+  },
+  "resolutions": {
+    "natives": "1.1.3"
+  }
+}
