@@ -2,7 +2,8 @@
 doctype html
 html(lang="pt-br")
   head
-    title Blog MenuQR
+    block head
+      title Blog MenuQR
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='description' content="MenuQR é a forma mais fácil de conectar o seu negócio com os principais mecanismos de busca do mercado.")
@@ -11,5 +12,9 @@ html(lang="pt-br")
 
     link(rel="stylesheet" href="/css/style.css")
 body
-  .container.max-width-md.mx-auto
+  .container.max-width-md.mx-auto.py-4
     block content
+
+  footer.container.max-width-md.mx-auto
+    p.text-center
+      small Baseado em <a class="text-brand-blue no-underline" href="https://jamstack.org/>">JAMStack</a>. Hospedado com <a class="text-brand-blue no-underline" href="https://pages.github.com/">GitHub Pages</a>. Código fonte <a class="text-brand-blue no-underline" href="https://github.com/menyoo-me/blog">GitHub</a>.

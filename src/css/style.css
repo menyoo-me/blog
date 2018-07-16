@@ -35,11 +35,11 @@
   * @import "components/buttons";
   * @import "components/forms";
   */
-  .blog-post {
+  .article-content {
     @apply mx-auto max-w-md;
   }
-  .blog-post p {
-      @apply font-serif text-grey text-xl text-justify;
+  .article-content p {
+      @apply font-serif text-grey-light text-xl text-justify mb-4 leading-normal;
   }
 
  /**
