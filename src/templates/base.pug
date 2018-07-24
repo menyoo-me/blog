@@ -12,9 +12,16 @@ html(lang="pt-br")
 
     link(rel="stylesheet" href="/css/style.css")
 body
-  .container.max-width-md.mx-auto.py-4
+
+  header.bg-brand-blue.pt-4.pb-16.mb-8.px-2
+    .container.max-width-md.mx-auto
+      a(href="/").inline-block.no-underline
+        img(src="/images/menyoo-logo-white-horizontal.png", alt="Logotipo Menyoo").h-8
+        span.block.text-white.text-xs.lowercase.-mt-2.text-right.mr-1.tracking-wide Blog
+
+  .container.max-width-md.mx-auto
     block content
 
-  footer.container.max-width-md.mx-auto
+  //- footer.container.max-width-md.mx-auto
     p.text-center
       small Baseado em <a class="text-brand-blue no-underline" href="https://jamstack.org/>">JAMStack</a>. Hospedado em <a class="text-brand-blue no-underline" href="https://www.netlify.com/?source=menyoo.me">Netlify</a>. Código fonte <a class="text-brand-blue no-underline" href="https://github.com/menyoo-me/blog">GitHub</a>.
