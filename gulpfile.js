@@ -46,7 +46,7 @@ gulp.task("serve", ["css"], () => {
     }
   });
 
-  gulp.watch(paths.src.views + "**/*.pug", ["views"]);
+  gulp.watch([paths.src.views + "**/*.pug", './src/templates/*.pug'], ["views"]);
   gulp.watch(paths.src.css + "*.css", ["css"]);
   gulp.watch(paths.config.tailwind, ["css"]);
   gulp.watch(paths.dist.base + "*.html").on("change", browserSync.reload);
@@ -58,6 +58,12 @@ gulp.task('minify-css', () => {
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest(paths.dist.css));
 });
+
+gulp.task('copy-images', () => {
+  return gulp.src(paths.src.images + '**.*')
+    .pipe(gulp.dest(paths.dist.images));
+});
+
 
 // default task
 gulp.task("default", ["serve"]);
