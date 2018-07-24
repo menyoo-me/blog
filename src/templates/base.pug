@@ -11,6 +11,15 @@ html(lang="pt-br")
     meta(http-equiv="Content-Language" content="pt-br")
 
     link(rel="stylesheet" href="/css/style.css")
+
+    // Global site tag (gtag.js) - Google Analytics
+    //- script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-112359359-4')
+    //- script.
+    //-   window.dataLayer = window.dataLayer || [];
+    //-   function gtag(){dataLayer.push(arguments);}
+    //-   gtag('js', new Date());
+    //-   gtag('config', 'UA-112359359-4');
+
 body
 
   header.bg-brand-blue.pt-4.pb-16.mb-8.px-2
@@ -19,7 +28,7 @@ body
         img(src="/images/menyoo-logo-white-horizontal.png", alt="Logotipo Menyoo").h-8
         span.block.text-white.text-xs.lowercase.-mt-2.text-right.mr-1.tracking-wide Blog
 
-  .container.max-width-md.mx-auto
+  .mx-auto
     block content
 
   //- footer.container.max-width-md.mx-auto
