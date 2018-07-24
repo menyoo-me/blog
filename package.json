@@ -7,10 +7,12 @@
   "paths": {
     "src": {
       "css": "./src/css/",
+      "images": "./src/images/",
       "views": "./src/views/"
     },
     "dist": {
       "base": "./dist/",
+      "images": "./dist/images",
       "css": "./dist/css/"
     },
     "config": {
@@ -18,7 +20,7 @@
     }
   },
   "scripts": {
-    "production": "gulp views && gulp css && gulp minify-css"
+    "production": "gulp copy-images && gulp views && gulp css && gulp minify-css"
   },
   "description": "MenuQR Static Blog",
   "repository": {
