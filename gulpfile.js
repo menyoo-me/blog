@@ -68,7 +68,3 @@ gulp.task('views', () => {
 		.pipe(pug({}))
 		.pipe(gulp.dest(paths.dist.base))
 });
-
-
-// Build Task
-gulp.task('build', ['views', 'css', 'minify-css']);
