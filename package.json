@@ -17,6 +17,9 @@
       "tailwind": "./tailwind.js"
     }
   },
+  "scripts": {
+    "production": "gulp views && gulp css && gulp minify-css"
+  },
   "description": "MenuQR Static Blog",
   "repository": {
     "url": "https://github.com/menyoo/blog.git",
