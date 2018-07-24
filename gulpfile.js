@@ -24,17 +24,17 @@ gulp.task("css", () => {
     .pipe(
       postcss([tailwindcss(paths.config.tailwind), require("autoprefixer")])
     )
-    // .pipe(
-    //   purgecss({
-    //     content: [paths.dist.base + "*.html"],
-    //     extractors: [
-    //       {
-    //         extractor: TailwindExtractor,
-    //         extensions: ["html", "js"]
-    //       }
-    //     ]
-    //   })
-    // )
+    .pipe(
+      purgecss({
+        content: [paths.dist.base + "**/*.html"],
+        extractors: [
+          {
+            extractor: TailwindExtractor,
+            extensions: ["html", "js"]
+          }
+        ]
+      })
+    )
     .pipe(gulp.dest(paths.dist.css));
 });
 
@@ -62,10 +62,6 @@ gulp.task('minify-css', () => {
 // default task
 gulp.task("default", ["serve"]);
 
-// Build Task
-gulp.task('build', ['css', 'minify-css']);
-
-
 gulp.task('views', () => {
 	return gulp.src('./src/views/**/*.pug')
 		.pipe(plumber())
@@ -74,9 +70,5 @@ gulp.task('views', () => {
 });
 
 
-gulp.task('views', function buildHTML() {
-  return gulp.src('./src/views/**/*.pug')
-    .pipe(plumber())
-    .pipe(pug({}))
-    .pipe(gulp.dest('./dist/'));
-});
+// Build Task
+gulp.task('build', ['views', 'css', 'minify-css']);
