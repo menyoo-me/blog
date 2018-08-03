@@ -206,6 +206,7 @@ module.exports = {
 
   fonts: {
     sans: [
+      "Nunito Sans",
       "-apple-system",
       "BlinkMacSystemFont",
       "Segoe UI",
@@ -219,6 +220,7 @@ module.exports = {
       "sans-serif"
     ],
     serif: [
+      "Lora",
       "Constantia",
       "Lucida Bright",
       "Lucidabright",
@@ -237,10 +239,6 @@ module.exports = {
       "Liberation Mono",
       "Courier New",
       "monospace"
-    ],
-    nunito: [
-      "Nunito",
-      "sans-serif"
     ]
   },
 
