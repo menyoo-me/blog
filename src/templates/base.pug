@@ -11,7 +11,7 @@ html(lang="pt-br")
     meta(http-equiv="Content-Language" content="pt-br")
 
     link(rel="stylesheet" href="/css/style.css")
-    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Nunito+Sans:400,800")
 
     // Global site tag (gtag.js) - Google Analytics
     script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-112359359-4')
@@ -21,16 +21,16 @@ html(lang="pt-br")
       gtag('js', new Date());
       gtag('config', 'UA-112359359-4');
 
-body.font-nunito
+body.font-sans
 
-  header.bg-brand-blue.pt-4.pb-16.mb-8.px-2
-    .container.max-width-md.mx-auto
+  header.bg-brand-blue.mb-16
+    .container.max-width-md.mx-auto.px-4.py-2
       a(href="/").inline-block.no-underline
         img(src="/images/menyoo-logo-white-horizontal.png", alt="Logotipo Menyoo").h-8
         span.block.text-white.text-xs.lowercase.-mt-2.text-right.mr-1.tracking-wide Blog
 
-  .mx-auto
-    block content
+
+  block content
 
   //- footer.container.max-width-md.mx-auto
     p.text-center
