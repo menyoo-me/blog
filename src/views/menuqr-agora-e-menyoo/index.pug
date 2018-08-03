@@ -1,7 +1,21 @@
 extends ../../templates/base.pug
 
 block head
-  title MenuQR agora é Menyoo :: Menyoo Blog
+  title MenuQR agora é Menyoo :: Blog Menyoo
+  meta(property='description', content='Muda é preciso, nesse post vamos explicar esse grande passo da nossa empresa')
+  //- Facebook
+  meta(property='og:url', content='https://blog.menyoo.me/menuqr-agora-e-menyoo/')
+  meta(property='og:type', content='article')
+  meta(property='og:title', content='MenuQR agora é Menyoo :: Blog Menyoo')
+  meta(property='og:description', content='Muda é preciso, nesse post vamos explicar esse grande passo da nossa empresa')
+  meta(property='og:image', content='https://blogg.menyoo.me/images/menuqr-agora-e-menyoo.png')
+  //- Twitter
+  meta(name='twitter:card', content='summary_large_image')
+  meta(name='twitter:site', content='@_menyoo')
+  meta(name='twitter:title', content='MenuQR agora é Menyoo :: Blog Menyoo')
+  meta(name='twitter:description', content='Muda é preciso, nesse post vamos explicar esse grande passo da nossa empresa')
+  meta(name='twitter:creator', content='@_menyoo')
+  meta(name='twitter:image:src', content='https://blogg.menyoo.me/images/menuqr-agora-e-menyoo.png')
 
 block content
   article.blog-post
