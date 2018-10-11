@@ -23,14 +23,17 @@ html(lang="pt-br")
 body.font-sans
 
   header.bg-brand-blue.mb-16
-    .container.max-width-md.mx-auto.px-4.py-2
+    .container.max-width-md.mx-auto.px-4.py-2.flex.justify-between.items-center
       a(href="/").inline-block.no-underline
         img(src="/images/menyoo-logo-white-horizontal.png", alt="Logotipo Menyoo").h-8
         span.block.text-white.text-xs.lowercase.-mt-2.text-right.mr-1.tracking-wide Blog
 
+      div
+        a(href="https://menyoo.me/signup.html").text-sm.sm--text-md.bg-dark-orange.hover--bg-dark-orange-dark.text-white.font-bold.tracking-wide.py-2.px-4.rounded.no-underline
+          | Criar conta GRÁTIS
 
   block content
 
-  //- footer.container.max-width-md.mx-auto
-    p.text-center
-      small Baseado em <a class="text-brand-blue no-underline" href="https://jamstack.org/>">JAMStack</a>. Hospedado em <a class="text-brand-blue no-underline" href="https://www.netlify.com/?source=menyoo.me">Netlify</a>. Código fonte <a class="text-brand-blue no-underline" href="https://github.com/menyoo-me/blog">GitHub</a>.
+  footer.container.max-width-md.mx-auto.my-8
+    p.text-center.text-grey-light
+      small Baseado em <a class="text-brand-blue no-underline" href="https://jamstack.org/>">JAMStack</a>. Hospedado em <a class="text-brand-blue no-underline" href="https://www.netlify.com/?source=menyoo.me">Netlify</a>. Código fonte no <a class="text-brand-blue no-underline" href="https://github.com/menyoo-me/blog">GitHub</a>.
