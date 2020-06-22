@@ -39,7 +39,7 @@
     @apply mx-auto max-w-lg;
   }
   .article-content p {
-      @apply font-sans text-grey-light text-lg text-justify mb-4 leading-normal px-2;
+      @apply font-sans text-grey-dark text-lg text-justify mb-4 leading-normal px-2;
   }
 
  /**
